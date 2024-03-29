@@ -11,13 +11,25 @@ import Contador from './components/Contador';
 // import Pai from './components/direta/Pai';
 import Pai from './components/indireta/Pai';
 import ContadorV2 from './components/contador/ContadorV2';
+import ParImpar from './components/ParImpar';
+import Familia from './components/relacao/Familia';
+import Membro from './components/relacao/Membro';
+import UsuarioLogado from './components/UsuarioLogado';
 
 export default () => {
   return (
-    <View style={style.App}>
-        
-        <ContadorV2/>
+    <SafeAreaView style={style.App}>
+        <UsuarioLogado usuario={{nome: "luis", email:"luis@gmail.com"}}/>
         {/* <Primeiro />
+        <Familia>
+          <Membro nome="Julia" sobrenome="Cerutti"/>
+        </Familia>
+
+        <Familia>
+          <Membro nome="Eduardo" sobrenome="José"/>
+        </Familia>
+        <ParImpar />
+        <ContadorV2/>
         <Pai />
         <Pai />
         <Contador inicial={100} passo={10} />
@@ -31,7 +43,7 @@ export default () => {
         <Comp2 />
         <MinMax min={3} max={20}/>
         <Aleatorio min={10} max={15}/> */}
-    </View>
+    </SafeAreaView>
   )
 }
 
