@@ -15,12 +15,24 @@ import ParImpar from './components/ParImpar';
 import Familia from './components/relacao/Familia';
 import Membro from './components/relacao/Membro';
 import UsuarioLogado from './components/UsuarioLogado';
+import ListaProdutoV2 from './components/produtos/ListaProdutoV2';
+import DigiteSeuNome from './components/DigiteSeuNome';
+import Quadrado from './components/layout/Quadrado';
+import FlexBoxV1 from './components/layout/FlexBoxV1';
+import FlexBoxV2 from './components/layout/FlexBoxV2';
+import FlexBoxV3 from './components/layout/FlexBoxV3';
+import FlexBoxV4 from './components/layout/FlexBoxV4';
 
 export default () => {
   return (
     <SafeAreaView style={style.App}>
-        <UsuarioLogado usuario={{nome: "luis", email:"luis@gmail.com"}}/>
+        <FlexBoxV4 />
         {/* <Primeiro />
+        <FlexBoxV3 />
+        <FlexBoxV1/>
+      <DigiteSeuNome/>
+        <ListaProdutoV2 />
+        <UsuarioLogado usuario={{nome: "luis", email:"luis@gmail.com"}}/>
         <Familia>
           <Membro nome="Julia" sobrenome="Cerutti"/>
         </Familia>
@@ -53,5 +65,6 @@ const style = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#fff',
-  }
+    padding: 10,
+  },
 })
